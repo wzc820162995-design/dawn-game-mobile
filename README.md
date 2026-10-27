@@ -1,5 +1,10 @@
 # 黎明游戏 手机版
 
+在线地址：
+<https://wzc820162995-design.github.io/dawn-game-mobile/>
+
+使用 GitHub Pages 静态托管，不依赖本机保持开机。
+
 微信可直接打开的 HTML5 Canvas 版本。玩法沿用桌面版，移动改为左下角触屏摇杆。
 
 ## 本地运行
