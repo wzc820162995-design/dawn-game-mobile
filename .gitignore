@@ -1,0 +1,4 @@
+server.log
+server.err.log
+screenshots-*.png
+__pycache__/

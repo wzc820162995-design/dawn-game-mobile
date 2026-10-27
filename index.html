@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#080b19">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta property="og:title" content="黎明游戏 Night Survivors">
+  <meta property="og:description" content="触屏摇杆，自动攻击，坚持两分钟迎来黎明。">
+  <meta property="og:image" content="assets/icon-512.png">
+  <title>黎明游戏 Night Survivors</title>
+  <link rel="icon" href="assets/icon.ico">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app" aria-label="黎明游戏 Night Survivors">
+    <canvas id="game" width="390" height="844" aria-label="手机游戏画布"></canvas>
+    <div id="loading" role="status" aria-live="polite">
+      <div class="loading-mark" aria-hidden="true"></div>
+      <div class="loading-title">黎明游戏</div>
+      <div class="loading-copy">Night Survivors</div>
+      <div class="loading-copy small">正在进入黑夜 / Entering the night</div>
+    </div>
+    <div id="error-panel" hidden>
+      <strong>加载失败 / Unable to load</strong>
+      <span id="error-message"></span>
+      <button id="retry-button" type="button">重试 / Retry</button>
+    </div>
+    <div id="orientation-hint" aria-hidden="true">
+      <span>请竖屏游玩</span>
+      <small>Please rotate to portrait</small>
+    </div>
+  </main>
+  <script src="game-core.js"></script>
+  <script src="game.js"></script>
+
+
+</body>
+</html>

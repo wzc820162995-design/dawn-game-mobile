@@ -1,0 +1,195 @@
+{
+  "screen": {
+    "width": 390,
+    "height": 700,
+    "fps": 60,
+    "fixed_dt": 0.0166666667
+  },
+  "goal_seconds": 120.0,
+  "hero": {
+    "speed": 120.0,
+    "max_hp": 100.0,
+    "hit_radius": 12.0,
+    "magnet_radius": 60.0,
+    "pickup_radius": 16.0,
+    "move_deadzone": 12.0,
+    "contact_cooldown": 0.5
+  },
+  "weapons": {
+    "spark": {
+      "name": "Spark Wand",
+      "name_zh": "星火法杖",
+      "max_level": 5,
+      "damage": 10.0,
+      "damage_per_level": 3.0,
+      "cooldown": 0.8,
+      "cooldown_per_level": 0.08,
+      "projectiles": 1,
+      "projectiles_at_levels": {
+        "3": 3,
+        "5": 5
+      },
+      "projectile_speed": 400.0,
+      "projectile_radius": 5.0,
+      "projectile_lifetime": 2.0,
+      "spread": 0.13
+    },
+    "blades": {
+      "name": "Spin Blades",
+      "name_zh": "回旋刃",
+      "max_level": 5,
+      "damage": 8.0,
+      "damage_per_level": 3.0,
+      "blades": 2,
+      "blades_at_levels": {
+        "2": 3,
+        "4": 4
+      },
+      "orbit_radius": 60.0,
+      "turn_seconds": 1.5,
+      "hit_cooldown": 0.5,
+      "hit_radius": 16.0
+    },
+    "holy": {
+      "name": "Holy Ring",
+      "name_zh": "圣光环",
+      "max_level": 5,
+      "damage": 5.0,
+      "damage_per_level": 2.0,
+      "radius": 50.0,
+      "radius_per_level": 10.0,
+      "cooldown": 0.5
+    }
+  },
+  "passives": {
+    "boots": {
+      "name": "Swift Boots",
+      "name_zh": "疾风靴",
+      "max_level": 5,
+      "speed_percent": 10.0
+    },
+    "heart": {
+      "name": "Big Heart",
+      "name_zh": "强健之心",
+      "max_level": 5,
+      "max_hp": 20.0,
+      "heal": 20.0
+    },
+    "magnet": {
+      "name": "Magnet",
+      "name_zh": "磁力护符",
+      "max_level": 5,
+      "radius": 30.0
+    }
+  },
+  "enemies": {
+    "bat": {
+      "name": "Bat",
+      "name_zh": "蝙蝠",
+      "hp": 8.0,
+      "speed": 100.0,
+      "damage": 5.0,
+      "xp": 1,
+      "picture": "bat.png",
+      "radius": 13.0
+    },
+    "slime": {
+      "name": "Slime",
+      "name_zh": "史莱姆",
+      "hp": 30.0,
+      "speed": 55.0,
+      "damage": 8.0,
+      "xp": 2,
+      "picture": "slime.png",
+      "radius": 16.0
+    },
+    "ghost": {
+      "name": "Ghost",
+      "name_zh": "幽灵",
+      "hp": 15.0,
+      "speed": 135.0,
+      "damage": 6.0,
+      "xp": 2,
+      "picture": "ghost.png",
+      "radius": 15.0
+    },
+    "demon": {
+      "name": "Demon",
+      "name_zh": "恶魔",
+      "hp": 800.0,
+      "speed": 85.0,
+      "damage": 20.0,
+      "xp": 0,
+      "picture": "demon.png",
+      "radius": 31.0,
+      "boss": true
+    }
+  },
+  "waves": [
+    {
+      "from": 0.0,
+      "types": ["bat"],
+      "minimum": 12
+    },
+    {
+      "from": 15.0,
+      "types": ["bat"],
+      "minimum": 20
+    },
+    {
+      "from": 30.0,
+      "types": ["bat", "slime"],
+      "minimum": 28
+    },
+    {
+      "from": 45.0,
+      "types": ["slime", "ghost"],
+      "minimum": 36
+    },
+    {
+      "from": 60.0,
+      "types": ["bat", "ghost"],
+      "minimum": 45
+    },
+    {
+      "from": 75.0,
+      "types": ["bat", "slime", "ghost"],
+      "minimum": 55
+    },
+    {
+      "from": 90.0,
+      "types": ["bat", "slime"],
+      "minimum": 55
+    },
+    {
+      "from": 105.0,
+      "types": ["bat"],
+      "minimum": 75
+    }
+  ],
+  "spawning": {
+    "radius": 380.0,
+    "interval": 1.0,
+    "max_per_interval": 8,
+    "max_alive": 120,
+    "remove_distance": 700.0
+  },
+  "boss": {
+    "type": "demon",
+    "spawn_at": 90.0,
+    "relocate_distance": 600.0,
+    "scale": 2.0
+  },
+  "gems": {
+    "magnet_speed": 300.0,
+    "radius": 8.0
+  },
+  "xp": {
+    "first_need": 5,
+    "need_increment": 3,
+    "level_choices": 3
+  },
+  "upgrade": {
+    "heal_amount": 30.0
+  }
+}

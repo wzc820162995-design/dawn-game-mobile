@@ -1,0 +1,26 @@
+{
+  "name": "黎明游戏 Night Survivors",
+  "short_name": "黎明游戏",
+  "description": "触屏摇杆，自动攻击，坚持两分钟迎来黎明。",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#080b19",
+  "theme_color": "#080b19",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
